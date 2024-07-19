@@ -18,8 +18,8 @@ from obfuscator import obfuscate, unobfuscate
 app = Flask(__name__)
 
 
-# Day of the first puzzle
-DAY_ZERO = date(2024, 7, 13)
+# Day before the first puzzle
+DAY_ZERO = date(2024, 7, 18)
 
 
 @app.route("/")
