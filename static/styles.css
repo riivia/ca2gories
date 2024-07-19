@@ -1,0 +1,463 @@
+:root {
+    --category-0: #c381a7; /* purple */
+    --category-1: #6d738d; /* blue */
+    --category-2: #e16d50; /* red */
+    --category-3: #ba7364; /* orange */
+
+    --special: #ada33d; /* green */
+    --almost: #e8b85c; /* yellow */
+    --default: #eed09b;
+
+    --dark: #3f3645;
+    --light: #f2e9d3; /* lightgray */
+    --transparent-light: #f2e9d39a;
+    --empty: #95827f; /* gray */
+}
+
+/* General */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--dark);
+    background-color: var(--light);
+
+    min-height: 95vh;
+}
+
+.error {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.inline {
+    display: inline-block;
+}
+
+/* Header */
+header {
+    align-self: flex-start;
+    justify-self: flex-start;
+
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+
+    margin-bottom: auto;
+
+    width: 100%;
+    height: 5vh;
+}
+
+.navbar {
+    width: min(800px, 90%);
+    display: flex;
+    align-items: center;
+}
+
+.navbar-buttons {
+    margin-left: auto;
+}
+
+header a {
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+header a:link, a:visited, a:hover, a:active {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+header .site-name {
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    text-align: center;
+    opacity: 0.5;
+}
+
+/* Instructions */
+.instructions {
+    display: flex;
+    flex-direction: column;
+    width: min(500px, 90%);
+
+    margin-bottom: 200px;
+}
+
+.example {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.example table {
+    width: 100%;
+    height: 100%;
+    border-spacing: 10px;
+}
+
+.example tr {
+    height: 70px;
+    width: 100%;
+}
+
+.example td {
+    height: 25px;
+    width: 25%;
+}
+
+.example .tile {
+    font-size: 20px;
+    cursor: auto;
+}
+
+.example .answer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 60px;
+}
+
+/* Archive */
+.archive {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: min(600px, 90%);
+}
+
+.archive button {
+    cursor: pointer;
+
+    width: 100px;
+    height: 100px;
+    margin: 10px 10px;
+
+    border-radius: 10px;
+    border: 0;
+
+    background-color: var(--default);
+
+    font-size: 25px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--dark);
+}
+
+/* Create */
+.create textarea {
+    width: 80%;
+    height: 60%;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+    resize: none;
+
+    background-color: transparent;
+    border-radius: 10px;
+    border: 0;
+
+    text-align: center;
+
+    font-size: 20px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--light);
+}
+
+.create .tile {
+    cursor: auto;
+}
+
+.create textarea:focus {
+    border: 0;
+    outline: none;
+    color: var(--dark);
+}
+
+.tile:has(textarea:focus) {
+    background-color: var(--default);
+}
+
+.answer:has(textarea:focus) {
+    background-color: var(--default);
+}
+
+::placeholder {
+    color: var(--transparent-light);
+}
+
+.create button {
+    align-self: center;
+
+    cursor: pointer;
+
+    width: 200px;
+    height: 80px;
+    margin: 10px 10px;
+
+    border-radius: 10px;
+    border: 0;
+
+    background-color: var(--default);
+
+    font-size: 25px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--dark);
+}
+
+/* UI */
+.date {
+    margin-left: 20px;
+    font-size: 25px;
+    text-align: left;
+}
+
+.swap-counter {
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 25px;
+    text-align: right;
+}
+
+.overlay{
+    pointer-events: none;
+    width:50%;
+    height:50%;
+    position:fixed;
+    top:40%;
+    left:25%;
+    z-index:100;
+    text-align:center;
+}
+
+/* Game */
+.game {
+    width: auto;
+
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-items: center;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 0px 20px;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+}
+
+.board table {
+    width: 1000px;
+    height: 600px;
+}
+
+.board td {
+    width: 25%;
+    height: 25%;
+    text-align: center;
+}
+
+    /* Slots */
+.slot {
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+}
+
+/* .slot.closest {} */
+
+    /* Tiles */
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+    text-align: center;
+    font-size: 25px;
+    
+    background-color: var(--default);
+    transition: background-color 0.5s;
+    
+    cursor: move;
+}
+
+.tile.dragging {
+    opacity: 0.4;
+}
+
+@-webkit-keyframes tile-solved {
+    0% {transform: scale(1.0)}
+    50% {transform: scale(1.1)}
+    100% {transform: scale(1.0)}
+}
+
+@keyframes tile-solved {
+    0% {transform: scale(1.0)}
+    50% {transform: scale(1.1)}
+    100% {transform: scale(1.0)}
+}
+
+.solved {
+    animation: tile-solved 0.2s;
+}
+
+    /* Tile colors */
+.category-0 {
+    color: var(--light);
+    background-color: var(--category-0);
+}
+
+.category-1 {
+    color: var(--light);
+    background-color: var(--category-1);
+}
+
+.category-2 {
+    color: var(--light);
+    background-color: var(--category-2);
+}
+
+.category-3 {
+    color: var(--light);
+    background-color: var(--category-3);
+}
+
+.special {
+    color: var(--light);
+    background-color: var(--special);
+}
+
+.almost {
+    color: var(--light);
+    background-color: var(--almost);
+}
+
+    /* Answers */
+.answers {
+    display: flex;
+    flex-direction: column;
+    
+    width: 400px;
+    max-width: 100%;
+}
+
+.answer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: auto;
+    height: 80px;
+    
+    transition: background-color 0.5s;
+}
+
+.not-guessed {
+    display: none;
+}
+
+.guessed {
+    animation: answer-guessed 0.4s;
+}
+
+    /* Animations */
+@-webkit-keyframes answer-guessed {
+    0% {transform: scale(0.0); z-index: 1;}
+    70% {transform: scale(1.2) rotate(-10deg);}
+    90% {transform: rotate(6deg);}
+    100% {transform: scale(1.0) rotate(0deg);}
+}
+
+@keyframes answer-guessed {
+    0% {transform: scale(0.0); z-index: 1;}
+    70% {transform: scale(1.2) rotate(-10deg);}
+    90% {transform: rotate(6deg);}
+    100% {transform: scale(1.0) rotate(0deg);}
+}
+
+/* Popup */
+/* https://www.w3schools.com/howto/howto_js_popup.asp */
+.popup {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup .popuptext {
+    font-size: 40px;
+    visibility: hidden;
+    width: 320px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -160px;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s, fadeOut 1s 2s;
+    animation: fadeIn 1s, fadeOut 1s 2s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}

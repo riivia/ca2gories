@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Custom game
+{% endblock %}
+
+{% block main %}
+    <script src="/static/create.js" defer></script>
+
+    <div class="overlay">
+        <div class="popup">
+            <span class="popuptext" id="popup">Last move</span>
+        </div>
+    </div>
+
+    <form class="game create">
+        <div class="board">
+            <div class="date">
+                <p>Create a puzzle</p>
+            </div>
+            <table>
+                {% for y in range (4) %}
+                <tr>
+                    {% for x in range(4) %}
+                        <td>
+                            <!-- Create a slot -->
+                            <div class="slot">
+                                <!-- Create a tile -->
+                                {% set index = y * 4 + x %}
+                                <div class="tile {% if x > 0 %}category-{{ y }}{% else %}special{% endif %}">
+                                    <textarea draggable="true" required class="input-word" maxlength="40" autocomplete="off" name="word-{{ index }}" placeholder="Word">{{ words[index] }}</textarea>
+                                </div>
+                            </div>
+                        </td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+            <button>
+                Create
+            </button>
+        </div>
+        <div class="answers">
+            {% for i in range(5) %}
+                <div class="answer {% if i > 0 %}category-{{ i - 1}}{% else %}special{% endif %}">
+                    <textarea draggable="true" required class="input-answer" maxlength="50" autocomplete="off" name="answer-{{ i }}" placeholder="Answer">{{ answers[i] }}</textarea>
+                </div>
+            {% endfor %}
+        </div>
+    </form>
+{% endblock %}

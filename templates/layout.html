@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <!-- Style sheet -->
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <!-- Libre Baskerville https://fonts.google.com/specimen/Libre+Baskerville -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <title>{% block title %}{% endblock %}</title>
+
+    </head>
+    
+    <body>
+        <header>
+            <div class="navbar">
+                <a class="site-name" href="/">Ca2gories</a>
+                <div class="navbar-buttons">
+                    <a href="/instructions">How to Play</a>
+                    <a href="/archive">Archive</a>
+                    <a href="/create">Create</a>
+                </div>
+            </div>
+        </header>
+
+        {% block main %}{% endblock %}
+
+    </body>
+
+    <footer>
+        Game by Michał Niemier
+    </footer>
+
+</html>

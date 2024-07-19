@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Ca2gories
+{% endblock %}
+
+{% block main %}
+    <script src="/static/game.js" defer></script>
+
+    <div class="overlay">
+        <div class="popup">
+            <span class="popuptext" id="popup">Last move</span>
+        </div>
+    </div>
+
+    <div class = "game">
+        <div class="board">
+            <div class="date">
+                <p>{{ date }}</p>
+            </div>
+            <table>
+                {% for y in range (4) %}
+                    <tr>
+                        {% for x in range(4) %}
+                            {% set tile = tiles[y * 4 + x] %}
+                            <td>
+                                <!-- Create a slot -->
+                                <div class="slot" data-x="{{ x }}" data-y="{{ y }}">
+                                    <!-- Create a tile -->
+                                    <div class="tile" draggable="true" data-category="{{ tile['category'] }}" data-special="{{ tile['special'] }}">
+                                        {{ tile["word"] }}
+                                    </div>
+                                </div>
+                            </td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </table>
+            <div class="swap-counter">
+                <p id="counter"></p>
+            </div>
+        </div>
+        <div class="answers">
+            {% for i in range(5) %}
+                <div class="answer not-guessed {% if i > 0 %}category-{{ i - 1}}{% else %}special{% endif %}">
+                    {{ answers[i] }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

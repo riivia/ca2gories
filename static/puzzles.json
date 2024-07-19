@@ -1,0 +1,170 @@
+[
+    {
+        "special": "Words containing a color",
+        "categories": [
+            {
+                "answer": "Fruits",
+                "words": ["blueberry", "watermelon", "pineapple", "pear"]
+            },
+            {
+                "answer": "Common house pets",
+                "words": ["goldfish", "dog", "cat", "hamster"]
+            },
+            {
+                "answer": "Fingers",
+                "words": ["pinky", "middle", "thumb", "index"]
+            },
+            {
+                "answer": "Phone companies",
+                "words": ["blackberry", "nokia", "samsung", "apple"]
+            }
+        ]
+    },
+    {
+        "special": "3D shapes",
+        "categories": [
+            {
+                "answer": "Things you can find on a road",
+                "words": ["cone", "sign", "lights", "guardrail"]
+            },
+            {
+                "answer": "ice ...",
+                "words": ["cube", "pick", "cream", "age"]
+            },
+            {
+                "answer": "Seven Wonders of the World",
+                "words": ["pyramid", "colossus", "gardens", "lighthouse"]
+            },
+            {
+                "answer": "Engine components",
+                "words": ["cylinder", "piston", "spark plug", "exhaust"]
+            }
+        ]
+    },
+    {
+        "special": "Question words",
+        "categories": [
+            {
+                "answer": "Famous doctors",
+                "words": ["Who", "Dre", "No", "House"]
+            },
+            {
+                "answer": "Letter homophones",
+                "words": ["Why", "Bee", "See", "Queue"]
+            },
+            {
+                "answer": "Beggining of famous app names",
+                "words": ["What", "Face", "You", "Insta"]
+            },
+            {
+                "answer": "Create new words when prefixed with S",
+                "words": ["How", "Low", "Ad", "Ale"]
+            }
+        ]
+    },
+    {
+        "special": "Movies with Out",
+        "categories": [
+            {
+                "answer": "Prepositions of place",
+                "words": ["Inside", "Under", "On", "In"]
+            },
+            {
+                "answer": "Things that can be sharp",
+                "words": ["Knives", "Pains", "Shooters", "Turns"]
+            },
+            {
+                "answer": "Popular words in programming",
+                "words": ["Get", "Set", "If", "Return"]
+            },
+            {
+                "answer": "Wind",
+                "words": ["Blow", "Gust", "Breeze", "Draft"]
+            }
+        ]
+    },
+    {
+        "special": "Basic shapes",
+        "categories": [
+            {
+                "answer": "Instruments",
+                "words": ["Triangle", "Drum", "Sax", "Trumpet"]
+            },
+            {
+                "answer": "Space objects",
+                "words": ["Star", "Moon", "Planet", "Asteroid"]
+            },
+            {
+                "answer": "Things you can be",
+                "words": ["Square", "Welcome", "Even", "Nuts"]
+            },
+            {
+                "answer": "A group of people",
+                "words": ["Circle", "Bunch", "Party", "Team"]
+            }
+        ]
+    },
+    {
+        "special": "Body parts",
+        "categories": [
+            {
+                "answer": "Kinds of trees",
+                "words": ["Palm", "Pine", "Spruce", "Oak"]
+            },
+            {
+                "answer": "Baby animals",
+                "words": ["Calf", "Foal", "Chick", "Lamb"]
+            },
+            {
+                "answer": "Imperial units",
+                "words": ["Foot", "Inch", "Mile", "Yard"]
+            },
+            {
+                "answer": "Attributes of a pirat",
+                "words": ["Chest", "Spyglass", "Hook", "Flag"]
+            }
+        ]
+    },
+    {
+        "special": "Bow-shaped",
+        "categories": [
+            {
+                "answer": "Things commonly found on flags",
+                "words": ["Crescent", "Star", "Cross", "Stripe"]
+            },
+            {
+                "answer": "Sweet pastries",
+                "words": ["Croissant", "Danish", "Cupcake", "Cannoli"]
+            },
+            {
+                "answer": "... Republic",
+                "words": ["Banana", "Dominican", "People's", "Czech"]
+            },
+            {
+                "answer": "Emojis",
+                "words": ["Smile", "Fire", "Eggplant", "Heart"]
+            }
+        ]
+    },
+    {
+        "special": "Poker terms",
+        "categories": [
+            {
+                "answer": "Things that need to be paid",
+                "words": ["Check", "Bill", "Tab", "Invoice"]
+            },
+            {
+                "answer": "High ...",
+                "words": ["Raise", "Way", "Light", "School"]
+            },
+            {
+                "answer": "Affirmative",
+                "words": ["Bet", "Sure", "Okay", "Roger"]
+            },
+            {
+                "answer": "Close ...",
+                "words": ["Call", "Up", "Down", "Family"]
+            }
+        ]
+    }
+]

@@ -1,0 +1,102 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    How to Play
+{% endblock %}
+
+{% block main %}
+    <div class="instructions">
+        <p>There are 5 categories in each puzzle. A category presents a common link for exactly 4 tiles.</p>
+        <div class="example">
+            <table>
+                <tr>
+                    <td><div class="tile">D</div></td>
+                    <td><div class="tile">Cobra</div></td>
+                    <td><div class="tile">Python</div></td>
+                    <td><div class="tile">B</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tile">Scuff</div></td>
+                    <td><div class="tile">Vase</div></td>
+                    <td><div class="tile">Bruise</div></td>
+                    <td><div class="tile">Jar</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tile">Bottle</div></td>
+                    <td><div class="tile">Scrape</div></td>
+                    <td><div class="tile">Viper</div></td>
+                    <td><div class="tile">FLask</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tile">C</div></td>
+                    <td><div class="tile">A</div></td>
+                    <td><div class="tile">Scratch</div></td>
+                    <td><div class="tile">Boa</div></td>
+                </tr>
+            </table>
+        </div>
+        <p>Swap tiles to organize them in rows and/or columns representing a category.</p>
+
+        <p>Tile colors change when all 4 tiles representing a category are in the same row or column.</p>
+        <div class="example">
+            <table>
+                <tr>
+                    <td><div class="tile category-1">Python</div></td>
+                    <td><div class="tile category-1">Cobra</div></td>
+                    <td><div class="tile category-1">Boa</div></td>
+                    <td><div class="tile category-1">Viper</div></td>
+                </tr>
+            </table>
+            <div class="answer category-1">Snakes</div>
+        </div>
+
+        <p>Tiles turn yellow when 3 tiles belonging to the same category are in the same row or column.</p>
+        <div class="example">
+            <table>
+                <tr>
+                    <td><div class="tile almost">Flask</div></td>
+                    <td><div class="tile almost">Vase</div></td>
+                    <td><div class="tile">Scratch</div></td>
+                    <td><div class="tile almost">Jar</div></td>
+                </tr>
+            </table>
+        </div>
+
+        <p>One of the 5 categories is special. It links one tile from each other category.</p>
+        <div class="example">
+            <table>
+                <tr>
+                    <td><div class="tile special">C</div></td>
+                    <td><div class="tile category-0">A</div></td>
+                    <td><div class="tile category-0">B</div></td>
+                    <td><div class="tile category-0">D</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tile special">Python</div></td>
+                    <td><div class="tile category-1">Cobra</div></td>
+                    <td><div class="tile category-1">Boa</div></td>
+                    <td><div class="tile category-1">Viper</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tile special">Scratch</div></td>
+                    <td><div class="tile category-2">Bruise</div></td>
+                    <td><div class="tile category-2">Scrape</div></td>
+                    <td><div class="tile category-2">Scuff</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tile special">Flask</div></td>
+                    <td><div class="tile category-3">Vase</div></td>
+                    <td><div class="tile category-3">Bottle</div></td>
+                    <td><div class="tile category-3">Jar</div></td>
+                </tr>
+            </table>
+            <div class="answer special">CS50 subjects</div>
+            <div class="answer category-0">Letters of the alphabet</div>
+            <div class="answer category-1">Snakes</div>
+            <div class="answer category-2">Minor injuries</div>
+            <div class="answer category-3">Containers</div>
+        </div>
+
+        <p>You have 15 tile swaps to find all 5 categories. Use them wisely!</p>
+    </div>
+{% endblock %}
