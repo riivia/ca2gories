@@ -6,7 +6,7 @@
 
 {% block main %}
     <div class="archive">
-        {% for i in range(days - 1) %}
+        {% for i in range(days) %}
             <a href="/archive?day={{i + 1}}"><button>{{ i + 1 }}</button></a>
         {% endfor %}
     </div>

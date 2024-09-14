@@ -1,6 +1,10 @@
-# To run:
+# To run WINDOWS:
 # Set-ExecutionPolicy Unrestricted -Scope Process
 # venv\Scripts\activate
+# flask run --debug
+
+# To run MAC:
+# python -m venv venv
 # flask run --debug
 
 # To stop:
@@ -22,6 +26,11 @@ app = Flask(__name__)
 DAY_ZERO = date(2024, 7, 18)
 
 
+# Load the puzzles
+with open("static/puzzles.json", "r") as file:
+    puzzles = load(file)
+
+
 @app.route("/")
 def index():
     day = (date.today() - DAY_ZERO).days
@@ -35,13 +44,13 @@ def index():
     
     today = format_date(puzzle["day"])
 
-    return render_template("index.html", tiles=puzzle["tiles"], answers=puzzle["answers"], date=today)
+    return render_template("index.html", tiles = puzzle["tiles"], answers = puzzle["answers"], date = today)
 
 
 @app.route("/archive")
 def archive():
     if "day" not in request.args.keys():
-        return render_template("archive.html", days=(date.today() - DAY_ZERO).days)
+        return render_template("archive.html", days = min((date.today() - DAY_ZERO).days, len(puzzles)))
 
     # Check if day is a number
     try:
@@ -68,7 +77,7 @@ def archive():
     
     day_of = format_date(puzzle["day"])
 
-    return render_template("index.html", tiles=puzzle["tiles"], answers=puzzle["answers"], date=day_of)
+    return render_template("index.html", tiles = puzzle["tiles"], answers = puzzle["answers"], date = day_of)
 
 
 @app.route("/create")
@@ -109,7 +118,7 @@ def create():
         }
         return redirect(f"/custom?data={obfuscate(data)}")
 
-    return render_template("create.html", words=words, answers=answers)
+    return render_template("create.html", words = words, answers = answers)
 
 
 @app.route("/custom")
@@ -135,7 +144,7 @@ def custom():
     if "solved" not in request.args.keys():
         shuffle_tiles(tiles)
 
-    return render_template("index.html", tiles=tiles, answers=data["answers"], date="Custom game")
+    return render_template("index.html", tiles = tiles, answers = data["answers"], date = "Custom game")
 
 
 @app.route("/instructions")
@@ -144,10 +153,6 @@ def instructions():
 
 
 def get_puzzle(day):
-    # Load the puzzles
-    with open("static/puzzles.json", "r") as file:
-        puzzles = load(file)
-
     if len(puzzles) < day:
         return None
 
@@ -189,6 +194,7 @@ def shuffle_tiles(tiles):
         shuffle(tiles)
         if is_shuffled(tiles):
             return
+
 
 def is_shuffled(tiles):
     for i in range(4):
@@ -245,8 +251,8 @@ def create_schema(data):
 
 
 def format_date(day):
-    return (DAY_ZERO + timedelta(days=day)).strftime("%d %B %Y")
+    return (DAY_ZERO + timedelta(days = day)).strftime("%d %B %Y")
 
 
 def render_error(message):
-    return (render_template("error.html", message=message), 404)
+    return (render_template("error.html", message = message), 404)
