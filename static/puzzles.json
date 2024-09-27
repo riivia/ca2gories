@@ -171,20 +171,20 @@
         "special": "Olympic sports in the modern pentathlon",
         "categories": [
             {
-            "answer": "Olympic combat sports",
-            "words": ["Fencing", "Judo", "Boxing", "Wrestling"]
+                "answer": "Olympic combat sports",
+                "words": ["Fencing", "Judo", "Boxing", "Wrestling"]
             },
             {
-            "answer": "Olympic sports that involve jumping",
-            "words": ["Show Jumping", "Hurdles", "Pole Vault", "High Jump"]
+                "answer": "Olympic sports that involve jumping",
+                "words": ["Show Jumping", "Hurdles", "Pole Vault", "High Jump"]
             },
             {
-            "answer": "Olympic sports that involve water",
-            "words": ["Swimming", "Triathlon", "Water Polo", "Surfing"]
+                "answer": "Olympic sports that involve water",
+                "words": ["Swimming", "Triathlon", "Water Polo", "Surfing"]
             },
             {
-            "answer": "Olympic sports that involve shooting",
-            "words": ["Laser-run", "Archery", "Trap", "Skeet"]
+                "answer": "Olympic sports that involve shooting",
+                "words": ["Laser-run", "Archery", "Trap", "Skeet"]
             }
         ]
     },
@@ -192,20 +192,20 @@
         "special": "Colors of the olympic rings",
         "categories": [
             {
-            "answer": "Unexperienced",
-            "words": ["Green", "Rookie", "Newbie", "Beginner"]
+                "answer": "Unexperienced",
+                "words": ["Green", "Rookie", "Newbie", "Beginner"]
             },
             {
-            "answer": "How one can feel",
-            "words": ["Blue", "Good", "Free", "Bad"]
+                "answer": "How one can feel",
+                "words": ["Blue", "Good", "Free", "Bad"]
             },
             {
-            "answer": "Types of pandas",
-            "words": ["Red", "Giant", "Trash", "Qinling"]
+                "answer": "Types of pandas",
+                "words": ["Red", "Giant", "Trash", "Qinling"]
             },
             {
-            "answer": "First words of The Beatles songs",
-            "words": ["Yellow", "Hey", "Strawberry", "Lucy"]
+                "answer": "First words of The Beatles songs",
+                "words": ["Yellow", "Hey", "Strawberry", "Lucy"]
             }
         ]
     },
@@ -213,20 +213,20 @@
         "special": "Types of \"nuts\"",
         "categories": [
             {
-            "answer": "Comics",
-            "words": ["Peanuts", "Garfield", "Asterix", "Calvin and Hobbes"]
+                "answer": "Comics",
+                "words": ["Peanuts", "Garfield", "Asterix", "Calvin and Hobbes"]
             },
             {
-            "answer": "South American countries",
-            "words": ["Brazil", "Chile", "Peru", "Ecuador"]
+                "answer": "South American countries",
+                "words": ["Brazil", "Chile", "Peru", "Ecuador"]
             },
             {
-            "answer": "Hardwood species",
-            "words": ["Walnut", "Ash", "Cherry", "Maple"]
+                "answer": "Hardwood species",
+                "words": ["Walnut", "Ash", "Cherry", "Maple"]
             },
             {
-            "answer": "Plant based milks",
-            "words": ["Almond", "Rice", "Soy", "Oat"]
+                "answer": "Plant based milks",
+                "words": ["Almond", "Rice", "Soy", "Oat"]
             }
         ]
     },
@@ -234,20 +234,62 @@
         "special": "Rodents",
         "categories": [
             {
-            "answer": "Computer accessories",
-            "words": ["Mouse", "Keyboard", "Speaker", "Monitor"]
+                "answer": "Computer accessories",
+                "words": ["Mouse", "Keyboard", "Speaker", "Monitor"]
             },
             {
-            "answer": "Terms for an informant",
-            "words": ["Rat", "Snitch", "Plant", "Spy"]
+                "answer": "Terms for an informant",
+                "words": ["Rat", "Snitch", "Plant", "Spy"]
             },
             {
-            "answer": "Animals native to South America",
-            "words": ["Capybara", "Llama", "Sloth", "Armadillo"]
+                "answer": "Animals native to South America",
+                "words": ["Capybara", "Llama", "Sloth", "Armadillo"]
             },
             {
-            "answer": "Animals from Winnie-the-Pooh",
-            "words": ["Rabbit", "Pig", "Owl", "Tiger"]
+                "answer": "Animals from Winnie-the-Pooh",
+                "words": ["Rabbit", "Pig", "Owl", "Tiger"]
+            }
+        ]
+    },
+    {
+        "special": "French ...",
+        "categories": [
+            {
+                "answer": "Newspaper",
+                "words": ["Press", "Paper", "Print", "Edition"]
+            },
+            {
+                "answer": "Included in a Happy Meal",
+                "words": ["Fries", "Burger", "Soda", "Toy"]
+            },
+            {
+                "answer": "70s rock bands",
+                "words": ["Kiss", "Blondie", "Queen", "AC/DC"]
+            },
+            {
+                "answer": "A troublesome situation",
+                "words": ["Toast", "Hot water", "Hole", "Mess"]
+            }
+        ]
+    },
+    {
+        "special": "Types of holes",
+        "categories": [
+            {
+                "answer": "Bending shapes",
+                "words": ["Loop", "Ring", "Helix", "Spiral"]
+            },
+            {
+                "answer": "Types of coffee",
+                "words": ["Black", "Americano", "Flat white", "Cappuccino"]
+            },
+            {
+                "answer": "Associated with fire",
+                "words": ["Hell", "Oven", "Match", "Torch"]
+            },
+            {
+                "answer": "Baked goods",
+                "words": ["Pie", "Cookie", "Muffin", "Bread"]
             }
         ]
     }

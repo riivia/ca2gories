@@ -225,27 +225,29 @@ def line_shuffled(line):
 
 
 def create_schema(data):
-    schema = f'''{{<br />
-        "special": '{data["answers"][0]}',<br />
-        "categories": [<br />
-            {{<br />
-                "answer": '{data["answers"][1]}',<br />
-                "words": {data["words"][:4]},<br />
-            }},<br />
-            {{<br />
-                "answer": '{data["answers"][2]}',<br />
-                "words": {data["words"][4:8]},<br />
-            }},<br />
-            {{<br />
-                "answer": '{data["answers"][3]}',<br />
-                "words": {data["words"][8:12]},<br />
-            }},<br />
-            {{<br />
-                "answer": '{data["answers"][4]}',<br />
-                "words": {data["words"][12:]},<br />
-            }}<br />
-        ]<br />
-    }}'''
+    schema = f'''<p style="white-space: pre;">
+    {{
+        "special": '{data["answers"][0]}',
+        "categories": [
+            {{
+                "answer": '{data["answers"][1]}',
+                "words": {data["words"][:4]},
+            }},
+            {{
+                "answer": '{data["answers"][2]}',
+                "words": {data["words"][4:8]},
+            }},
+            {{
+                "answer": '{data["answers"][3]}',
+                "words": {data["words"][8:12]},
+            }},
+            {{
+                "answer": '{data["answers"][4]}',
+                "words": {data["words"][12:]},
+            }}
+        ]
+    }}</p>'''
+    print(schema)
     schema = schema.replace("'", '"').replace("],", "]")
     return schema
 
