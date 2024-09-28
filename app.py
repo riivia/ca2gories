@@ -225,7 +225,7 @@ def line_shuffled(line):
 
 
 def create_schema(data):
-    schema = f'''<p style="white-space: pre;">
+    schema = f'''<p style="white-space: pre;">,
     {{
         "special": '{data["answers"][0]}',
         "categories": [

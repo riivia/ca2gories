@@ -292,5 +292,47 @@
                 "words": ["Pie", "Cookie", "Muffin", "Bread"]
             }
         ]
+    },
+    {
+        "special": "Audio entertainment",
+        "categories": [
+            {
+                "answer": "Book versions",
+                "words": ["Audiobook", "Hardback", "Softcover", "Digital"]
+            },
+            {
+                "answer": "Electromagnetic waves",
+                "words": ["Radio", "Microwave", "Gamma", "Visible"]
+            },
+            {
+                "answer": "Internet entertainment",
+                "words": ["Podcast", "Vlog", "Webcomics", "Blog"]
+            },
+            {
+                "answer": "Things that can be 'live'",
+                "words": ["Music", "Wire", "Broadcast", "Action"]
+            }
+        ]
+    },
+    {
+        "special": "A thin layer",
+        "categories": [
+            {
+                "answer": "A flick",
+                "words": ["Film", "Feature", "Movie", "Picture"]
+            },
+            {
+                "answer": "Components of a human cell",
+                "words": ["Membrane", "Nucleus", "Mitochondria", "Cytoplasm"]
+            },
+            {
+                "answer": "Outer garment",
+                "words": ["Coat", "Jacket", "Vest", "Blazer"]
+            },
+            {
+                "answer": "Found in a bed",
+                "words": ["Sheet", "Pillow", "Comforter", "Blanket"]
+            }
+        ]
     }
 ]
