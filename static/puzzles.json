@@ -334,5 +334,89 @@
                 "words": ["Sheet", "Pillow", "Comforter", "Blanket"]
             }
         ]
+    },
+    {
+        "special": "Halloween decorations",
+        "categories": [
+            {
+                "answer": "Can mean a secret in an idiom",
+                "words": ["Skeleton", "Bean", "Cat", "Card"]
+            },
+            {
+                "answer": "Superheroes with man",
+                "words": ["Bat", "Super", "Aqua", "Ant"]
+            },
+            {
+                "answer": "Ways of using a pumpkin",
+                "words": ["Jack-o'-lantern", "Pie", "Soup", "Spice latte"]
+            },
+            {
+                "answer": "Materials made by insects",
+                "words": ["Cobweb", "Wax", "Silk", "Shellac"]
+            }
+        ]
+    },
+    {
+        "special": "Title contains a color",
+        "categories": [
+            {
+                "answer": "Title contains a name and a last name",
+                "words": ["The Picture of Dorian Gray", "Forrest Gump", "Indiana Jones and the Last Crusade", "Harry Potter and the Goblet of Fire"]
+            },
+            {
+                "answer": "Title contains an imperial unit of measurement",
+                "words": ["The Green Mile", "Happy Feet", "Ten Inch Hero", "The Longest Yard"]
+            },
+            {
+                "answer": "Title contains a holiday",
+                "words": ["Black Christmas", "Hubie Halloween", "Independence Day", "Happy New Year"]
+            },
+            {
+                "answer": "Title contains a fruit",
+                "words": ["A Clockwork Orange", "The Grapes of Wrath", "Wild Strawberries", "Bananas"]
+            }
+        ]
+    },
+    {
+        "special": "Found in a comic book",
+        "categories": [
+            {
+                "answer": "Floor types",
+                "words": ["Panel", "Linoleum", "Tile", "Hardwood"]
+            },
+            {
+                "answer": "Filled with air",
+                "words": ["Bubble", "Baloon", "Beach ball", "Tires"]
+            },
+            {
+                "answer": "Used to make a painting",
+                "words": ["Frame", "Easel", "Stretcher", "Canvas"]
+            },
+            {
+                "answer": "Bygone forms of sending messages",
+                "words": ["Page", "Fax", "Cable", "Wire"]
+            }
+        ]
+    },
+    {
+        "special": "Found in a Super Mario level",
+        "categories": [
+            {
+                "answer": "To destroy (about an electronic device)",
+                "words": ["Brick", "Corrupt", "Down", "Bork"]
+            },
+            {
+                "answer": "To perform (in a movie or on stage)",
+                "words": ["Star", "Play", "Act", "Feature"]
+            },
+            {
+                "answer": "Popular gifts for a significant other",
+                "words": ["Flower", "Chocolate", "Jewelery", "Card"]
+            },
+            {
+                "answer": "Ways of consuming tobacco",
+                "words": ["Pipe", "Snuff", "Cigar", "Hookah"]
+            }
+        ]
     }
 ]

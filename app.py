@@ -92,7 +92,7 @@ def create():
     for i in range(NUMBER_OF_WORDS):
         field = f"word-{i}"
         if field in request.args.keys():
-            word = request.args[field]
+            word = request.args[field].strip()
             if len(word) > MAX_WORD_LENGTH:
                 word = word[:MAX_WORD_LENGTH]
                 too_long = True
@@ -104,7 +104,7 @@ def create():
     for i in range(NUMBER_OF_ANSWERS):
         field = f"answer-{i}"
         if field in request.args.keys():
-            answer = request.args[field]
+            answer = request.args[field].strip()
             if len(answer) > MAX_ANSWER_LENGTH:
                 answer = answer[:MAX_ANSWER_LENGTH]
                 too_long = True
