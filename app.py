@@ -23,7 +23,7 @@ app = Flask(__name__)
 
 
 # Day before the first puzzle
-DAY_ZERO = date(2024, 7, 18)
+DAY_ZERO = date(2024, 6, 24)
 
 
 # Load the puzzles
@@ -33,8 +33,8 @@ with open("static/puzzles.json", "r") as file:
 
 @app.route("/")
 def index():
-    day = (date.today() - DAY_ZERO).days
-    puzzle = get_puzzle(day)
+    week = (date.today() - DAY_ZERO).days // 7
+    puzzle = get_puzzle(week)
 
     if puzzle is None:
         return render_error("No puzzle for today.")
@@ -42,40 +42,42 @@ def index():
     if "solved" not in request.args.keys():
         shuffle_tiles(puzzle["tiles"])
     
-    today = format_date(puzzle["day"])
+    day = format_date(puzzle["day"])
 
-    return render_template("index.html", tiles = puzzle["tiles"], answers = puzzle["answers"], date = today)
+    return render_template("index.html", tiles = puzzle["tiles"], answers = puzzle["answers"], date = day)
 
 
 @app.route("/archive")
 def archive():
-    if "day" not in request.args.keys():
-        return render_template("archive.html", days = min((date.today() - DAY_ZERO).days, len(puzzles)))
+    this_week = (date.today() - DAY_ZERO).days // 7
+
+    if "week" not in request.args.keys():
+        return render_template("archive.html", weeks = min(this_week, len(puzzles)))
 
     # Check if day is a number
     try:
-        day = int(request.args["day"])
+        week = int(request.args["week"])
     except ValueError:
         return render_error("Invalid day")
 
     # Check if day is not negative
-    if day <= 0:
+    if week <= 0:
         return render_error("Date too early")
     
     # If day is today, go to index
-    if day == (date.today() - DAY_ZERO).days:
+    if week == this_week:
         return redirect("/")
 
     # Check if day is in the future
-    if day > (date.today() - DAY_ZERO).days:
-        return render_error(f"Return at {format_date(day)}")
+    if week > this_week:
+        return render_error(f"Return at {format_date(week)}")
     
-    puzzle = get_puzzle(day)
+    puzzle = get_puzzle(week)
 
     if "solved" not in request.args.keys():
         shuffle_tiles(puzzle["tiles"])
     
-    day_of = format_date(puzzle["day"])
+    day_of = format_date(puzzle["day"]) + " " + f"#{week}"
 
     return render_template("index.html", tiles = puzzle["tiles"], answers = puzzle["answers"], date = day_of)
 
@@ -253,7 +255,7 @@ def create_schema(data):
 
 
 def format_date(day):
-    return (DAY_ZERO + timedelta(days = day)).strftime("%d %B %Y")
+    return ((DAY_ZERO + timedelta(weeks = day))).strftime("%d %B %Y")
 
 
 def render_error(message):

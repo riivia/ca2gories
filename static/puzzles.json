@@ -84,6 +84,48 @@
         ]
     },
     {
+        "special": "Colors of the olympic rings",
+        "categories": [
+            {
+                "answer": "Unexperienced",
+                "words": ["Green", "Rookie", "Newbie", "Beginner"]
+            },
+            {
+                "answer": "How one can feel",
+                "words": ["Blue", "Good", "Free", "Bad"]
+            },
+            {
+                "answer": "Types of pandas",
+                "words": ["Red", "Giant", "Trash", "Qinling"]
+            },
+            {
+                "answer": "First words of The Beatles songs",
+                "words": ["Yellow", "Hey", "Strawberry", "Lucy"]
+            }
+        ]
+    },
+    {
+        "special": "Olympic sports in the modern pentathlon",
+        "categories": [
+            {
+                "answer": "Olympic combat sports",
+                "words": ["Fencing", "Judo", "Boxing", "Wrestling"]
+            },
+            {
+                "answer": "Olympic sports that involve jumping",
+                "words": ["Show Jumping", "Hurdles", "Pole Vault", "High Jump"]
+            },
+            {
+                "answer": "Olympic sports that involve water",
+                "words": ["Swimming", "Triathlon", "Water Polo", "Surfing"]
+            },
+            {
+                "answer": "Olympic sports that involve shooting",
+                "words": ["Laser-run", "Archery", "Trap", "Skeet"]
+            }
+        ]
+    },
+    {
         "special": "Basic shapes",
         "categories": [
             {
@@ -164,48 +206,6 @@
             {
                 "answer": "Close ...",
                 "words": ["Call", "Up", "Down", "Family"]
-            }
-        ]
-    },
-    {
-        "special": "Olympic sports in the modern pentathlon",
-        "categories": [
-            {
-                "answer": "Olympic combat sports",
-                "words": ["Fencing", "Judo", "Boxing", "Wrestling"]
-            },
-            {
-                "answer": "Olympic sports that involve jumping",
-                "words": ["Show Jumping", "Hurdles", "Pole Vault", "High Jump"]
-            },
-            {
-                "answer": "Olympic sports that involve water",
-                "words": ["Swimming", "Triathlon", "Water Polo", "Surfing"]
-            },
-            {
-                "answer": "Olympic sports that involve shooting",
-                "words": ["Laser-run", "Archery", "Trap", "Skeet"]
-            }
-        ]
-    },
-    {
-        "special": "Colors of the olympic rings",
-        "categories": [
-            {
-                "answer": "Unexperienced",
-                "words": ["Green", "Rookie", "Newbie", "Beginner"]
-            },
-            {
-                "answer": "How one can feel",
-                "words": ["Blue", "Good", "Free", "Bad"]
-            },
-            {
-                "answer": "Types of pandas",
-                "words": ["Red", "Giant", "Trash", "Qinling"]
-            },
-            {
-                "answer": "First words of The Beatles songs",
-                "words": ["Yellow", "Hey", "Strawberry", "Lucy"]
             }
         ]
     },
