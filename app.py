@@ -77,9 +77,9 @@ def archive():
     if "solved" not in request.args.keys():
         shuffle_tiles(puzzle["tiles"])
     
-    day_of = format_date(puzzle["day"]) + " " + f"#{week}"
+    day_of = format_date(puzzle["day"])
 
-    return render_template("index.html", tiles = puzzle["tiles"], answers = puzzle["answers"], date = day_of)
+    return render_template("index.html", tiles = puzzle["tiles"], answers = puzzle["answers"], date = day_of, number = week)
 
 
 @app.route("/create")

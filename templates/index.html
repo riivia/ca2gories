@@ -15,8 +15,17 @@
 
     <div class = "game">
         <div class="board">
-            <div class="date">
-                <p>{{ date }}</p>
+            <div class="top-info">
+                <p class="date">{{ date }}</p>
+                {% if number %}
+                <div>
+                    {% if number > 1 %}
+                        <a href="/archive?week={{number - 1}}">«</a>
+                    {% endif %}
+                    <p>{{ number }}</p>
+                    <a href="/archive?week={{number + 1}}">»</a>
+                </div>
+                {% endif %}
             </div>
             <table>
                 {% for y in range (4) %}
