@@ -79,7 +79,7 @@ def archive():
     
     day_of = format_date(puzzle["day"])
 
-    return render_template("index.html", tiles = puzzle["tiles"], answers = puzzle["answers"], date = day_of, number = week)
+    return render_template("index.html", tiles = puzzle["tiles"], answers = puzzle["answers"], date = day_of, number = week, is_last = (this_week - week == 1))
 
 
 @app.route("/create")

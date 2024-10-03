@@ -19,11 +19,9 @@
                 <p class="date">{{ date }}</p>
                 {% if number %}
                 <div>
-                    {% if number > 1 %}
-                        <a href="/archive?week={{number - 1}}">«</a>
-                    {% endif %}
+                    {% if number > 1 %}<a href="/archive?week={{number - 1}}">«</a>{% endif %}
                     <p>{{ number }}</p>
-                    <a href="/archive?week={{number + 1}}">»</a>
+                    {% if not is_last %}<a href="/archive?week={{number + 1}}">»</a>{% endif %}
                 </div>
                 {% endif %}
             </div>
