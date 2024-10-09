@@ -418,5 +418,89 @@
                 "words": ["Pipe", "Snuff", "Cigar", "Hookah"]
             }
         ]
+    },
+    {
+        "special": "Physical boundaries",
+        "categories": [
+            {
+                "answer": "Participate in a contact sport",
+                "words": ["Fence", "Box", "Wrestle", "Spar"]
+            },
+            {
+                "answer": "Pixar movies minus the last letter",
+                "words": ["Wall", "Sou", "U", "Car"]
+            },
+            {
+                "answer": "New word when combined with a swine (eg. boarfish)",
+                "words": ["Hedge", "Back", "Guinea", "Fish"]
+            },
+            {
+                "answer": "Associated with language",
+                "words": ["Barrier", "Tongue", "Accent", "Translation"]
+            }
+        ]
+    },
+    {
+        "special": "Multinational organizations",
+        "categories": [
+            {
+                "answer": "... Box",
+                "words": ["Un", "Cardboard", "Beat", "Litter"]
+            },
+            {
+                "answer": "Personal object pronouns",
+                "words": ["Us", "Her", "Me", "You"]
+            },
+            {
+                "answer": "Building materials",
+                "words": ["Bricks", "Cement", "Plaster", "Concrete"]
+            },
+            {
+                "answer": "Atomic symbols of metals",
+                "words": ["Au", "Pt", "Ag", "Cu"]
+            }
+        ]
+    },
+    {
+        "special": "... Park",
+        "categories": [
+            {
+                "answer": "A sneak peek",
+                "words": ["Trailer", "Teaser", "Demo", "Preview"]
+            },
+            {
+                "answer": "The four elements",
+                "words": ["Water", "Fire", "Earth", "Air"]
+            },
+            {
+                "answer": "Synonyms to 'main'",
+                "words": ["Central", "Key", "Prime", "Core"]
+            },
+            {
+                "answer": "A motive",
+                "words": ["Theme", "Topic", "Subject", "Idea"]
+            }
+        ]
+    },
+    {
+        "special": "Words ending with a chess piece",
+        "categories": [
+            {
+                "answer": "Dishonest person",
+                "words": ["Crook", "Cheat", "Fraud", "Fake"]
+            },
+            {
+                "answer": "What Batman villains do",
+                "words": ["Joking", "Riddle", "Freeze", "Baning"]
+            },
+            {
+                "answer": "Diabolical creatures",
+                "words": ["Spawn", "Imp", "Demon", "Hellhound"]
+            },
+            {
+                "answer": "To cherish",
+                "words": ["Beknight", "Honour", "Regard", "Value"]
+            }
+        ]
     }
 ]
